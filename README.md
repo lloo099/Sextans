@@ -12,7 +12,10 @@ U200 implementation:
 ```
 source /opt/xilinx/xrt/setup.sh
 source /tools/Xilinx/Vitis/2020.1/settings64.sh
-make check TARGET=hw DEVICE=xilinx_u200_xdma_201830_2 HOST_ARCH=x86
+make all TARGET=hw DEVICE=xilinx_u200_xdma_201830_2 HOST_ARCH=x86
+
+./host sextans.xclbin p2p-Gnutella04/p2p-Gnutella04.mtx 16 0.85 -2.5
+
 ```
 
 If you find this code useful, please cite:
